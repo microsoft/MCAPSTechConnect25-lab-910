@@ -1,0 +1,100 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch App in Teams (Edge)",
+            "type": "msedge",
+            "request": "launch",
+            "url": "https://www.microsoft365.com/chat",
+            "cascadeTerminateToConfigurations": [
+                "Attach to Backend"
+            ],
+            "presentation": {
+                "group": "all",
+                "hidden": true
+            },
+            "internalConsoleOptions": "neverOpen",
+            "postDebugTask": "Terminate All Tasks"
+        },
+        {
+            "name": "Launch App in Teams (Chrome)",
+            "type": "chrome",
+            "request": "launch",
+            "url": "https://www.microsoft365.com/chat",
+            "cascadeTerminateToConfigurations": [
+                "Attach to Backend"
+            ],
+            "presentation": {
+                "group": "all",
+                "hidden": true
+            },
+            "internalConsoleOptions": "neverOpen",
+            "postDebugTask": "Terminate All Tasks"
+        },
+        {
+            "name": "Preview in Copilot (Edge)",
+            "type": "msedge",
+            "request": "launch",
+            "url": "https://www.microsoft365.com/chat",
+            "presentation": {
+                "group": "remote",
+                "order": 1
+            },
+            "internalConsoleOptions": "neverOpen",
+            "postDebugTask": "Terminate All Tasks"
+        },
+        {
+            "name": "Preview in Copilot (Chrome)",
+            "type": "chrome",
+            "request": "launch",
+            "url": "https://www.microsoft365.com/chat",
+            "presentation": {
+                "group": "remote",
+                "order": 2
+            },
+            "internalConsoleOptions": "neverOpen",
+            "postDebugTask": "Terminate All Tasks"
+        },
+        {
+            "name": "Attach to Backend",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+            "restart": true,
+            "presentation": {
+                "group": "all",
+                "hidden": true
+            },
+            "internalConsoleOptions": "neverOpen",
+            "postDebugTask": "Terminate All Tasks"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Debug in Copilot (Edge)",
+            "configurations": [
+                "Launch App in Teams (Edge)",
+                "Attach to Backend"
+            ],
+            "preLaunchTask": "Start Teams App Locally",
+            "presentation": {
+                "group": "all",
+                "order": 1
+            },
+            "stopAll": true
+        },
+        {
+            "name": "Debug in Copilot (Chrome)",
+            "configurations": [
+                "Launch App in Teams (Chrome)",
+                "Attach to Backend"
+            ],
+            "preLaunchTask": "Start Teams App Locally",
+            "presentation": {
+                "group": "all",
+                "order": 2
+            },
+            "stopAll": true
+        }
+    ]
+}
