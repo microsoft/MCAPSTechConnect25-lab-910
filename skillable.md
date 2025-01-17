@@ -961,7 +961,7 @@ Find **"run_for_functions": [** and update it by adding the new functions **post
 
 Again, please double check your nesting and commas as editing large JSON files can be tricky! The correctly modified file is on your lab workstation in **C:\Users\LabUser\TeamsApps\Lab-445-Completed\appPackage/trey-plugin.json**.
 
-#### Step W: Provision a new version of the declarative agent
+#### Step 5: Provision a new version of the declarative agent
 
 Let's create a new version of the declarative agent, so we can test the new capabilities.
 
@@ -969,7 +969,7 @@ First, in Visual Studio Code open the **env** folder and delete **.env.local** f
 
 Second, in your **trey-declarative-agent.json** file, add a number to the name such as "Trey Genie 3", as you will see another copy of the agent in Copilot. Then test by clicking on the one with a new name.
 
-### Step 5: Test the API
+### Step 6: Test the API
 
 Now restart the debugger. Although the code is updated automatically, you need to completely restart it to force it to redeploy the app package, which now contains more details.
 
@@ -983,7 +983,7 @@ This time try sending the GET request for all projects.
 
 You should get back ten projects.
 
-### Step 6: Test the updated declarative agent in Copilot
+### Step 7: Test the updated declarative agent in Copilot
 
 With the debugger still running, restore your debug browser session. Open Copilot and the "Trey Genie 3" declarative agent.
 Here are a couple of prompts to try:
