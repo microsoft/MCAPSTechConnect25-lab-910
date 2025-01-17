@@ -195,7 +195,7 @@ The final **trey-declarative-agent.json** file should look like this:
 
 NOTE: The completed solution can be found in C:\Users\LabUser\TeamsApps\LAB-445-END on your workstation if you want to copy or compare with the final source code.
 
-#### Step W: Provision a new version of the declarative agent
+#### Step 4: Provision a new version of the declarative agent
 
 Let's create a new version of the declarative agent, so we can test the new capabilities.
 
@@ -203,7 +203,7 @@ First, in Visual Studio Code open the **env** folder and delete **.env.local** f
 
 Second, in your **trey-declarative-agent.json** file, add a number to the name such as "Trey Genie 2", as you will see another copy of the agent in Copilot. Then test by clicking on the one with a new name.
 
-### Step 4: Test in Copilot
+### Step 5: Test in Copilot
 
 Now press F5 or the arrow button to start the debugger again. In case BizChat doesn't open, copy the following link in the browser: +++https://www.microsoft365.com/chat/?auth=2+++.
 
