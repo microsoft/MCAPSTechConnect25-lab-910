@@ -11,7 +11,7 @@ Continuing in the new window:
 1. On the **Activity Bar**, select the **Teams Toolkit icon** 1️⃣.
 1. Under **Accounts**, select **Sign in to Microsoft 365** 2️⃣. A browser window is opened.
 
-![01-04-SetupTTK-01.png](../images//01-04-Setup-TTK-01.png)
+![01-04-SetupTTK-01.png](media/01-04-Setup-TTK-01.png)
 
 Continuing in the web browser:
 
@@ -23,7 +23,7 @@ Continuing in Visual Studio Code:
 
 - Ensure that **Custom app upload enabled** and **Copilot access enabled** appear with a green checkbox before continuing.
 
-![run-in-ttk01.png](../images/run-in-ttk01.png)
+![run-in-ttk01.png](media/run-in-ttk01.png)
 
 ### Step 2: Set up the local environment files
 
@@ -36,7 +36,7 @@ Continuing in Visual Studio Code:
 
 Press F5 or hover over the "local" environment and click the debugger symbol that will be displayed 1️⃣ and then select "debug in Microsft Edge" 2️⃣.
 
-![run-in-ttk02.png](../images/run-in-ttk02.png)
+![run-in-ttk02.png](media/run-in-ttk02.png)
 
 It will take a while. If you get an error about not being able to run the "Ensure database" script, please try a 2nd time as this is a timing issue waiting for the Azure storage emulator to run for the first time.
 
@@ -56,11 +56,11 @@ Before proceeding, ensure the log file is in view by opening the "Debug console"
 
 Now click the "Send Request" link in treyResearchAAPI.http just above the link {{base_url}}/me 6️⃣.
 
-![run-in-ttk04.png](../images/run-in-ttk04.png)
+![run-in-ttk04.png](media/run-in-ttk04.png)
 
 You should see the response in the right panel, and a log of the request in the bottom panel. The response shows the information about the logged-in user, but since we haven't implemented authentication as yet (that's coming in Lab 6), the app will return information on the fictitious consultant "Avery Howard". Take a moment to scroll through the response to see details about Avery, including a list of project assignments.
 
-![run-in-ttk05.png](../images/run-in-ttk05.png)
+![run-in-ttk05.png](media/images/run-in-ttk05.png)
 
 Try some more API calls to familiarize yourself with the API and the data.
 
@@ -70,7 +70,7 @@ Now restore the browser window you minimized in Step 3. You should see the Micro
 
 Open the right flyout 1️⃣ and, if necessary, click "Show more"2️⃣ to reveal all the choices. Then choose "Trey Genie local"3️⃣, which is the agent you just installed.
 
-![run-declarative-copilot-01.png](../images/run-declarative-copilot-01.png)
+![run-declarative-copilot-01.png](media/images/run-declarative-copilot-01.png)
 
 Try one of the prompt suggestions such as, "Find consultants with TypeScript skills." You should see two consultants, Avery Howard and Sanjay Puranik, with additional details from the database.
 

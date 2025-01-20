@@ -14,7 +14,7 @@ Be sure to remind users of the Trey motto, 'Always be Billing!'.
 
 In a web browser, open the site +++https://lodsprodmca.sharepoint.com/sites/TreyLegalDocuments+++. You may need to log in again. When you see the site home page, click on "Documents" to view the Trey Research legal documents. Notice that it contains contracts for two consulting engagements, Bellows College and Woodgrove Bank.
 
-![sharepoint-docs.png](../images/sharepoint-docs.png)
+![sharepoint-docs.png](media/sharepoint-docs.png)
 
 ### Step 3: Add the SharePoint capability
 
