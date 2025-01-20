@@ -60,7 +60,7 @@ Now click the "Send Request" link in treyResearchAAPI.http just above the link {
 
 You should see the response in the right panel, and a log of the request in the bottom panel. The response shows the information about the logged-in user, but since we haven't implemented authentication as yet (that's coming in Lab 6), the app will return information on the fictitious consultant "Avery Howard". Take a moment to scroll through the response to see details about Avery, including a list of project assignments.
 
-![run-in-ttk05.png](media/images/run-in-ttk05.png)
+![run-in-ttk05.png](media/run-in-ttk05.png)
 
 Try some more API calls to familiarize yourself with the API and the data.
 
@@ -70,7 +70,7 @@ Now restore the browser window you minimized in Step 3. You should see the Micro
 
 Open the right flyout 1️⃣ and, if necessary, click "Show more"2️⃣ to reveal all the choices. Then choose "Trey Genie local"3️⃣, which is the agent you just installed.
 
-![run-declarative-copilot-01.png](media/images/run-declarative-copilot-01.png)
+![run-declarative-copilot-01.png](media/run-declarative-copilot-01.png)
 
 Try one of the prompt suggestions such as, "Find consultants with TypeScript skills." You should see two consultants, Avery Howard and Sanjay Puranik, with additional details from the database.
 
