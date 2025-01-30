@@ -1,4 +1,4 @@
-# Lab 445 - Part 1:2 Declarative Agents: Build Agents for Microsoft 365 Copilot
+# Lab 910 - Part 1:2 Declarative Agents: Build Agents for Microsoft 365 Copilot
 
 This repository contains source code and instructions used in the lab delivered at Microsoft Ignite 2024 in Chicago.
 
