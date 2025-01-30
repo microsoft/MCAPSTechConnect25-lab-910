@@ -94,6 +94,6 @@ Now press F5 or the arrow button to start the debugger again. In case BizChat do
 Find the "Trey Genie 2" in Copilot and test with the prompt below:
 
 
-* +++"What is the status of the Woodgrove project?"+++ (The project phases should come from the statement of work in SharePoint)
+* +++What is the status of the Woodgrove project?+++ (The project phases should come from the statement of work in SharePoint)
 
 In addition to including information from the statement of work, Copilot should include the Trey motto, "always be billing."
