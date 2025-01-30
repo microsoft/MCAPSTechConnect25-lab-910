@@ -34,7 +34,7 @@ Continuing in Visual Studio Code:
 
 - Start a new debug session, press <kbd>F5</kbd> on your keyboard.
 
-Press F5 or hover over the "local" environment and click the debugger symbol that will be displayed 1️⃣ and then select "debug in Microsft Edge" 2️⃣.
+Press F5 or hover over the "local" environment and click the debugger symbol that will be displayed 1️⃣ and then select "Debug in Copilot (Edge)" 2️⃣.
 
 ![run-in-ttk02.png](media/run-in-ttk02.png)
 
