@@ -777,7 +777,7 @@ Here are a couple of prompts to try:
 # Congratulations!
 
 ---
-You have completed Lab 445 and built a Declarative agent with an API plugin.
+You have completed Lab 910 and built a Declarative agent with an API plugin.
 If you want to learn more, including how to add API authentication to your project, you can find a deeper dive into this and other examples at [https://aka.ms/copilotdevcamp](https://aka.ms/copilotdevcamp).
 
 What cool prompts can you think of that weren't mentioned in the lab instructions?
