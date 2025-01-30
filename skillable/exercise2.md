@@ -75,7 +75,7 @@ The final **trey-declarative-agent.json** file should look like this:
 }
 ~~~
 
-NOTE: The completed solution can be found in C:\Users\LabUser\TeamsApps\LAB-445-END on your workstation if you want to copy or compare with the final source code.
+NOTE: The completed solution can be found in C:\Users\LabUser\TeamsApps\LAB-910-END on your workstation if you want to copy or compare with the final source code.
 
 #### Step W: Provision a new version of the declarative agent
 

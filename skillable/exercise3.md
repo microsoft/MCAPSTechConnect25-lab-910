@@ -316,7 +316,7 @@ Find **"paths": {** array and copy these lines inside the array right after **"p
 
 Let's add another endpoint to the API specification. The code snippet below makes a **POST** request for the **/projects/assignConsultant** path. 
 
-Now add these lines inside the same **"paths": {** array:
+Find **"paths": {** array and copy these lines inside the array right after **"paths": {** line:
 
 ~~~
 "/projects/assignConsultant": {
@@ -395,10 +395,10 @@ Now add these lines inside the same **"paths": {** array:
             }
         }
     }
-}
+},
 ~~~
 
-Be sure to check your nesting on the brackets as it gets a little tricky with large JSON files! For your reference the finished file is at **C:\Users\LabUser\TeamsApps\Lab-445-Completed\appPackage\trey-definition.json**.
+Be sure to check your nesting on the brackets as it gets a little tricky with large JSON files! For your reference the finished file is at **C:\Users\LabUser\TeamsApps\Lab-910-Completed\appPackage\trey-definition.json**.
 
 ### Step 4: Add the projects information to your API plugin file
 
@@ -610,7 +610,6 @@ Notice that in addition to the name and description, this includes **"response_s
 Now add another function after **"functions":[** line for the Post request function for **projects/assignConsultant**:
 
 ~~~
-,
 {
     "name": "postAssignConsultant",
     "description": "Assign (add) consultant to a project when name, role and project name is specified.",
@@ -725,7 +724,7 @@ Now add another function after **"functions":[** line for the Post request funct
         "body": "* **ProjectName**: {{function.parameters.projectName}}\n* **ConsultantName**: {{function.parameters.consultantName}}\n* **Role**: {{function.parameters.role}}\n* **Forecast**: {{function.parameters.forecast}}"
     }
     }
-}
+},
 ~~~
 
 Find **"run_for_functions": [** and update it by adding the new functions **postAssignConsultant** and **getProjects**. The final version of "run_for_functions" should look like below:
@@ -741,7 +740,7 @@ Find **"run_for_functions": [** and update it by adding the new functions **post
 ~~~
 
 
-Again, please double check your nesting and commas as editing large JSON files can be tricky! The correctly modified file is on your lab workstation in **C:\Users\LabUser\TeamsApps\Lab-445-Completed\appPackage/trey-plugin.json**.
+Again, please double check your nesting and commas as editing large JSON files can be tricky! The correctly modified file is on your lab workstation in **C:\Users\LabUser\TeamsApps\Lab-910-Completed\appPackage/trey-plugin.json**.
 
 #### Step 4: Provision a new version of the declarative agent
 
@@ -777,7 +776,7 @@ Here are a couple of prompts to try:
 # Congratulations!
 
 ---
-You have completed Lab 445 and built a Declarative agent with an API plugin.
+You have completed Lab 910 and built a Declarative agent with an API plugin.
 If you want to learn more, including how to add API authentication to your project, you can find a deeper dive into this and other examples at [https://aka.ms/copilotdevcamp](https://aka.ms/copilotdevcamp).
 
 What cool prompts can you think of that weren't mentioned in the lab instructions?
