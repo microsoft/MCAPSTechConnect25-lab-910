@@ -398,7 +398,7 @@ Now add these lines inside the same **"paths": {** array:
 }
 ~~~
 
-Be sure to check your nesting on the brackets as it gets a little tricky with large JSON files! For your reference the finished file is at **C:\Users\LabUser\TeamsApps\Lab-445-Completed\appPackage\trey-definition.json**.
+Be sure to check your nesting on the brackets as it gets a little tricky with large JSON files! For your reference the finished file is at **C:\Users\LabUser\TeamsApps\Lab-910-END\appPackage\trey-definition.json**.
 
 ### Step 4: Add the projects information to your API plugin file
 
