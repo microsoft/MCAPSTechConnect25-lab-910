@@ -72,7 +72,20 @@ Open the right flyout 1️⃣ and, if necessary, click "Show more"2️⃣ to rev
 
 ![run-declarative-copilot-01.png](media/run-declarative-copilot-01.png)
 
-Try one of the prompt suggestions such as, "Find consultants with TypeScript skills." You should see two consultants, Avery Howard and Sanjay Puranik, with additional details from the database.
+Try one of the prompt suggestions such as, +++Find consultants with TypeScript skills.+++
+
+The first time the agent calls the API plugin, you will need to approve the request. If you open the details panel, you'll see how Copilot has extracted from the prompt the parameters it needs to call the API:
+
+![You are required to consent before the agent can use an API plugin](media/run-declarative-permission.png)
+
+You have two options:
+
+- Click on **Always allow**. From now on, the agent won't ask anymore the consent each time it needs to call an API.
+- Click on **Allow once** which, instead, will give consent only for this specific request.
+
+> [!Note] The **Always allow** option works only for "read" requests, in which the API is used to pull data into Copilot to generate a response. If the agent needs to make a "write" request, such as charging hours to a project, it will always ask for confirmation.
+
+You should see two consultants, Avery Howard and Sanjay Puranik, with additional details from the database.
 
 Your log file should reflect the request that Copilot made. You might want to try some other prompts, clicking "New Chat" in between to clear the conversation context. Here are some ideas:
 

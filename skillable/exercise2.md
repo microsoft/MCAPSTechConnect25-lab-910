@@ -1,6 +1,6 @@
- ## Exercise 2: Add instructions and SharePoint files
+## Exercise 2: Add instructions and SharePoint files
 
- In this exercise you'll update your declarative agent with more instructions and add the capability to include knowledge from a SharePoint site.
+In this exercise you'll update your declarative agent with more instructions and add the capability to include knowledge from a SharePoint site.
  
 ### Step 1: Add instructions
 
@@ -77,7 +77,7 @@ The final **trey-declarative-agent.json** file should look like this:
 
 NOTE: The completed solution can be found in C:\Users\LabUser\TeamsApps\LAB-445-END on your workstation if you want to copy or compare with the final source code.
 
-#### Step W: Provision a new version of the declarative agent
+#### Step 4: Provision a new version of the declarative agent
 
 Let's create a new version of the declarative agent, so we can test the new capabilities.
 
@@ -87,13 +87,14 @@ Second, in your **trey-declarative-agent.json** file, add a number to the name s
 
 ### Step 4: Test in Copilot
 
-Now press F5 or the arrow button to start the debugger again. In case BizChat doesn't open, copy the following link in the browser: +++https://www.microsoft365.com/chat/?auth=2+++.
+Now press F5 or the arrow button to start the debugger again. In case Copilot Chat doesn't open, copy the following link in the browser: +++https://www.microsoft365.com/chat/?auth=2+++.
 
 > NOTE: If the debugger does not start after a few minutes, close Visual Studio Code and open it again. There is a race condition when starting the database a second time in the same VS Code session; it is harmless except requring restarting VS Code from time to time.
 
 Find the "Trey Genie 2" in Copilot and test with the prompt below:
 
+* +++What is the status of the Woodgrove project?+++ (The project phases should come from the statement of work in SharePoint)
 
-* +++"What is the status of the Woodgrove project?"+++ (The project phases should come from the statement of work in SharePoint)
+> [!Note] Since we have deployed a new declarative agent, you will need to give consent to use the API plugin even if you have previously given consent to the original agent.
 
 In addition to including information from the statement of work, Copilot should include the Trey motto, "always be billing."
