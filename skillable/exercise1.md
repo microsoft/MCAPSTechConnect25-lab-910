@@ -4,7 +4,7 @@
 
 1. Open **Visual Studio Code**
 1. Expand the **File** menu, select **Open folder...**
-1. Navigate to **C:\Users\LabUser\TeamsApps**, select the folder with the name **LAB-910**, and select **Select folder**. Visual Studio Code opens the project in a new window.
+1. Navigate to **C:\Users\LabUser\TeamsApps**, select the folder with the name **LAB-910-BEGIN**, and select **Select folder**. Visual Studio Code opens the project in a new window.
 
 Continuing in the new window:
 
@@ -34,7 +34,7 @@ Continuing in Visual Studio Code:
 
 - Start a new debug session, press <kbd>F5</kbd> on your keyboard.
 
-Press F5 or hover over the "local" environment and click the debugger symbol that will be displayed 1️⃣ and then select "debug in Microsft Edge" 2️⃣.
+Press F5 or hover over the "local" environment and click the debugger symbol that will be displayed 1️⃣ and then select "Debug in Copilot (Edge)" 2️⃣.
 
 ![run-in-ttk02.png](media/run-in-ttk02.png)
 
