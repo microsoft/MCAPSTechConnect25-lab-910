@@ -316,7 +316,7 @@ Find **"paths": {** array and copy these lines inside the array right after **"p
 
 Let's add another endpoint to the API specification. The code snippet below makes a **POST** request for the **/projects/assignConsultant** path. 
 
-Now add these lines inside the same **"paths": {** array:
+Find **"paths": {** array and copy these lines inside the array right after **"paths": {** line:
 
 ~~~
 "/projects/assignConsultant": {
@@ -395,7 +395,7 @@ Now add these lines inside the same **"paths": {** array:
             }
         }
     }
-}
+},
 ~~~
 
 Be sure to check your nesting on the brackets as it gets a little tricky with large JSON files! For your reference the finished file is at **C:\Users\LabUser\TeamsApps\Lab-910-END\appPackage\trey-definition.json**.
@@ -610,7 +610,6 @@ Notice that in addition to the name and description, this includes **"response_s
 Now add another function after **"functions":[** line for the Post request function for **projects/assignConsultant**:
 
 ~~~
-,
 {
     "name": "postAssignConsultant",
     "description": "Assign (add) consultant to a project when name, role and project name is specified.",
@@ -725,7 +724,7 @@ Now add another function after **"functions":[** line for the Post request funct
         "body": "* **ProjectName**: {{function.parameters.projectName}}\n* **ConsultantName**: {{function.parameters.consultantName}}\n* **Role**: {{function.parameters.role}}\n* **Forecast**: {{function.parameters.forecast}}"
     }
     }
-}
+},
 ~~~
 
 Find **"run_for_functions": [** and update it by adding the new functions **postAssignConsultant** and **getProjects**. The final version of "run_for_functions" should look like below:
@@ -768,11 +767,13 @@ You should get back ten projects.
 ### Step 6: Test the updated declarative agent in Copilot
 
 With the debugger still running, restore your debug browser session. Open Copilot and the "Trey Genie 3" declarative agent.
-Here are a couple of prompts to try:
+Here are a few prompts to try:
 
 * +++What projects is Trey Resarch working on now?+++ (should return all the projects)
 * +++Please add Domi as a designer on the Contoso project. Forecast 30 hours for her work.+++ (should show a confirmation card, then add Domi to the project)
 * +++What projects is Domi working on?+++ (should now include the Contoso project).
+
+> [!Note] Like in Excercise 2, since we have deployed a new declarative agent, you will need to give consent to use the API plugin even if you have previously given consent to the original agent.
 
 # Congratulations!
 

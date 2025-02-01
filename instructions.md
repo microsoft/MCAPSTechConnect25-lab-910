@@ -1,4 +1,4 @@
-# Lab 445 - Build declarative agents for Microsoft 365 Copilot
+# Lab 910 - Build declarative agents for Microsoft 365 Copilot
 
 ## Requirements
 
@@ -31,7 +31,7 @@ We assume you know the basics of creating and editing files in Visual Studio Cod
 
 1. Open **Visual Studio Code**
 1. Expand the **File** menu, select **Open folder...**
-1. Navigate to **C:\Users\LabUser\TeamsApps**, select the folder with the name **LAB-445**, and select **Select folder**. Visual Studio Code opens the project in a new window.
+1. Navigate to **C:\Users\LabUser\TeamsApps**, select the folder with the name **LAB-910**, and select **Select folder**. Visual Studio Code opens the project in a new window.
 
 Continuing in the new window:
 
@@ -923,7 +923,7 @@ Find **"run_for_functions": [** and update it by adding the new functions **post
 ~~~
 
 
-Again, please double check your nesting and commas as editing large JSON files can be tricky! The correctly modified file is on your lab workstation in **C:\Users\LabUser\TeamsApps\Lab-445-Completed\appPackage/trey-plugin.json**.
+Again, please double check your nesting and commas as editing large JSON files can be tricky! The correctly modified file is on your lab workstation in **C:\Users\LabUser\TeamsApps\Lab-910-Completed\appPackage/trey-plugin.json**.
 
 #### Step W: Provision a new version of the declarative agent
 
@@ -959,7 +959,7 @@ Here are a couple of prompts to try:
 # Congratulations!
 
 ---
-You have completed Lab 445 and built a Declarative agent with an API plugin.
+You have completed Lab 910 and built a Declarative agent with an API plugin.
 If you want to learn more, including how to add API authentication to your project, you can find a deeper dive into this and other examples at [https://aka.ms/copilotdevcamp](https://aka.ms/copilotdevcamp).
 
 What cool prompts can you think of that weren't mentioned in the lab instructions?
