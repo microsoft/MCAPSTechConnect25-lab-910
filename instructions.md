@@ -923,7 +923,7 @@ Find **"run_for_functions": [** and update it by adding the new functions **post
 ~~~
 
 
-Again, please double check your nesting and commas as editing large JSON files can be tricky! The correctly modified file is on your lab workstation in **C:\Users\LabUser\TeamsApps\Lab-910-Completed\appPackage/trey-plugin.json**.
+Again, please double check your nesting and commas as editing large JSON files can be tricky! The correctly modified file is on your lab workstation in **C:\Users\LabUser\TeamsApps\Lab-910-END\appPackage/trey-plugin.json**.
 
 #### Step W: Provision a new version of the declarative agent
 
