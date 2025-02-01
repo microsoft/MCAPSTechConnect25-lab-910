@@ -4,7 +4,7 @@
 
 1. Open **Visual Studio Code**
 1. Expand the **File** menu, select **Open folder...**
-1. Navigate to **C:\Users\LabUser\TeamsApps**, select the folder with the name **LAB-910-BEGIN**, and select **Select folder**. Visual Studio Code opens the project in a new window.
+1. Navigate to **C:\Users\LabUser\TeamsApps**, select the folder with the name **LAB-910**, and select **Select folder**. Visual Studio Code opens the project in a new window.
 
 Continuing in the new window:
 
