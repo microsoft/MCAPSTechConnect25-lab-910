@@ -16,7 +16,7 @@ Use this account to log into Microsoft 365:
 
 **Password: +++@lab.CloudPortalCredential(User1).Password+++**
 
-# Lab 445 - Build Declarative Agents for Microsoft 365 Copilot
+# Lab 910 - Build Declarative Agents for Microsoft 365 Copilot
 
 In this lab you will build a declarative agent that assists employees of a fictitous consulting company called Trey Research. Like all declarative agents, this will use the AI model's and orchestration that's built into Microsoft 365 to provide a specialized Copilot experience that focuses on information about consultants, billing, and projects.
 
