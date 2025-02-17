@@ -1,5 +1,7 @@
 @lab.Title
 
+If you're attending the lab at MCAPS Tech Connect 2025 in Seattle, you can use the following credentials.
+
 Use this account to log into Windows:
 
 **Username: ++@lab.VirtualMachine(Win11-Pro-Base-VM).Username++**

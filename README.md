@@ -1,6 +1,13 @@
-# Lab 445 - Part 1:2 Declarative Agents: Build Agents for Microsoft 365 Copilot
+# Lab 910 - Part 1:2 Declarative Agents: Build Agents for Microsoft 365 Copilot
 
-This repository contains source code and instructions used in the lab delivered at Microsoft Ignite 2024 in Chicago.
+This repository contains source code and instructions used in the lab delivered at MCAPS Tech Connect 2025 in Seattle.
+
+To perform the lab, follow this sequence:
+
+- [Preqrequisites](/skillable/prerequisites.md)
+- [Exercise 1: Run the starting solution](/skillable/exercise1.md)
+- [Exercise 2: Add instructions and SharePoint files](/skillable/exercise2.md)
+- [Exercise 3: Add project API](/skillable/exercise3.md)
 
 ## Contributing
 
@@ -20,6 +27,6 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
 trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
+[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
