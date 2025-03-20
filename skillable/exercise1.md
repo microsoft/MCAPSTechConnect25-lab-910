@@ -15,9 +15,7 @@ Continuing in the new window:
 
 Continuing in the web browser:
 
-- Sign in using a "Work and School" account; as a reminder here are your login credentials for the lab tenant:
-    - **Username**: +++@lab.CloudPortalCredential(User1).Username+++
-    - **Password**: +++@lab.CloudPortalCredential(User1).Password+++
+- Sign in using a "Work and School" account and provide the credentials for your tenant.
 
 Continuing in Visual Studio Code:
 
@@ -40,13 +38,9 @@ Press F5 or hover over the "local" environment and click the debugger symbol tha
 
 It will take a while. If you get an error about not being able to run the "Ensure database" script, please try a 2nd time as this is a timing issue waiting for the Azure storage emulator to run for the first time.
 
-The Edge browser should open to the Copilot "Bizchat" page.
+The Edge browser should open to the Copilot Chat page.
 
-If you are prompted to log in, choose "work and school" account and use these credentials:
-
-**Username: +++@lab.CloudPortalCredential(User1).Username+++**
-
-**Password: +++@lab.CloudPortalCredential(User1).Password+++**
+If you are prompted to log in, choose "work and school" account and provide the credentials for your tenant.
 
 Minimize the browser so you can test the API locally. (Don't close the browser or you will exit the debug session!)
 
@@ -54,11 +48,11 @@ With the debugger still running 1️⃣, switch to the code view in Visual Studi
 
 Before proceeding, ensure the log file is in view by opening the "Debug console" tab 4️⃣ and ensuring that the console called "Attach to Backend" is selected 5️⃣.
 
-Now click the "Send Request" link in treyResearchAAPI.http just above the link {{base_url}}/me 6️⃣.
+Now click the "Send Request" link in treyResearchAPI.http just above the link {{base_url}}/me 6️⃣.
 
 ![run-in-ttk04.png](media/run-in-ttk04.png)
 
-You should see the response in the right panel, and a log of the request in the bottom panel. The response shows the information about the logged-in user, but since we haven't implemented authentication as yet (that's coming in Lab 6), the app will return information on the fictitious consultant "Avery Howard". Take a moment to scroll through the response to see details about Avery, including a list of project assignments.
+You should see the response in the right panel, and a log of the request in the bottom panel. The response shows the information about the logged-in user, but since we haven't implemented authentication, the app will return information on the fictitious consultant "Avery Howard". Take a moment to scroll through the response to see details about Avery, including a list of project assignments.
 
 ![run-in-ttk05.png](media/run-in-ttk05.png)
 
@@ -66,13 +60,13 @@ Try some more API calls to familiarize yourself with the API and the data.
 
 ### Step 4: Run the solution in Copilot
 
-Now restore the browser window you minimized in Step 3. You should see the Microsoft 365 Copilot window. If you need to navigate there, the URL is +++https://www.microsoft365.com/chat/?auth=2+++.
+Now restore the browser window you minimized in Step 3. You should see the Microsoft 365 Copilot window. If you need to navigate there, the URL is `https://www.microsoft365.com/chat/?auth=2`.
 
 Open the right flyout 1️⃣ and, if necessary, click "Show more"2️⃣ to reveal all the choices. Then choose "Trey Genie local"3️⃣, which is the agent you just installed.
 
 ![run-declarative-copilot-01.png](media/run-declarative-copilot-01.png)
 
-Try one of the prompt suggestions such as, +++Find consultants with TypeScript skills.+++
+Try one of the prompt suggestions such as, *Find consultants with TypeScript skills*.
 
 The first time the agent calls the API plugin, you will need to approve the request. If you open the details panel, you'll see how Copilot has extracted from the prompt the parameters it needs to call the API:
 
@@ -89,7 +83,7 @@ You should see two consultants, Avery Howard and Sanjay Puranik, with additional
 
 Your log file should reflect the request that Copilot made. You might want to try some other prompts, clicking "New Chat" in between to clear the conversation context. Here are some ideas:
 
- * +++Find consultants who are Azure certified and available immediately+++ (this will cause Copilot to use two query string parameters)
- * +++What projects am I assigned to?+++ (this will return information about Avery Howard who is "me" since we haven't implemented authentication)
- * +++Charge 3 hours to the Woodgrove project+++ (this will cause a POST request, and the user will need to confirm before it will udpate the data)
- * +++How many hours have I billed to Woodgrove+++ (this will demonstrate if the hours were updated in the database)
+ * *Find consultants who are Azure certified and available immediately* (this will cause Copilot to use two query string parameters)
+ * *What projects am I assigned to?* (this will return information about Avery Howard who is "me" since we haven't implemented authentication)
+ * *Charge 3 hours to the Woodgrove project* (this will cause a POST request, and the user will need to confirm before it will update the data)
+ * *How many hours have I billed to Woodgrove* (this will demonstrate if the hours were updated in the database)

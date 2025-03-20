@@ -6,13 +6,14 @@ In this exercise you'll update your declarative agent with more instructions and
 
 Open in the **appPackage** folder open **trey-declarative-agent.json**. Add some text to the **instructions** value, staying on one line and between the quotation marks:
 
-~~~
+```text
 Be sure to remind users of the Trey motto, 'Always be Billing!'.
-~~~
+```
 
 ### Step 2: Inspect the SharePoint site
 
-In a web browser, open the site +++https://lodsprodmca.sharepoint.com/sites/TreyLegalDocuments+++. You may need to log in again. When you see the site home page, click on "Documents" to view the Trey Research legal documents. Notice that it contains contracts for two consulting engagements, Bellows College and Woodgrove Bank.
+As part of the pre-requirements, you should have created a SharePoint site in your tenant called "Trey Legal Documents" and uploaded in the document library a bunch of files. 
+In a web browser, open the site `https://xyz.sharepoint.com/sites/TreyLegalDocuments`, where `xyz` is your tenant's name. You may need to log in again. When you see the site home page, click on "Documents" to view the Trey Research legal documents. Notice that it contains contracts for two consulting engagements, Bellows College and Woodgrove Bank.
 
 ![sharepoint-docs.png](media/sharepoint-docs.png)
 
@@ -20,22 +21,24 @@ In a web browser, open the site +++https://lodsprodmca.sharepoint.com/sites/Trey
 
 Now return to the **trey-declarative-agent.json** file and add these lines just above the **actions** property:
 
-~~~
+```json
 "capabilities": [
     {
         "name": "OneDriveAndSharePoint",
         "items_by_url": [
             {
-                "url": "https://lodsprodmca.sharepoint.com/sites/TreyLegalDocuments"
+                "url": "https://xyz.sharepoint.com/sites/TreyLegalDocuments"
             }
         ]
     }
 ],
-~~~
+```
+
+Remember, also in this case, to replace `xyz` with your tenant name.
 
 The final **trey-declarative-agent.json** file should look like this:
 
-~~~
+```
 {
     "$schema": "https://aka.ms/json-schemas/copilot-extensions/vNext/declarative-copilot.schema.json",
     "version": "v1.0",
@@ -61,7 +64,7 @@ The final **trey-declarative-agent.json** file should look like this:
             "name": "OneDriveAndSharePoint",
             "items_by_url": [
                 {
-                    "url": "https://lodsprodmca.sharepoint.com/sites/TreyLegalDocuments"
+                    "url": "https://xyz.sharepoint.com/sites/TreyLegalDocuments"
                 }
             ]
         }
@@ -73,9 +76,9 @@ The final **trey-declarative-agent.json** file should look like this:
         }
     ]
 }
-~~~
+```
 
-NOTE: The completed solution can be found in C:\Users\LabUser\TeamsApps\LAB-910-END on your workstation if you want to copy or compare with the final source code.
+NOTE: The completed solution can be found in the LAB-910-END included in the project you have downloaded if you want to copy or compare with the final source code.
 
 #### Step 4: Provision a new version of the declarative agent
 
@@ -87,14 +90,14 @@ Second, in your **trey-declarative-agent.json** file, add a number to the name s
 
 ### Step 4: Test in Copilot
 
-Now press F5 or the arrow button to start the debugger again. In case Copilot Chat doesn't open, copy the following link in the browser: +++https://www.microsoft365.com/chat/?auth=2+++.
+Now press F5 or the arrow button to start the debugger again. In case Copilot Chat doesn't open, copy the following link in the browser: `https://www.microsoft365.com/chat/?auth=2`
 
 > NOTE: If the debugger does not start after a few minutes, close Visual Studio Code and open it again. There is a race condition when starting the database a second time in the same VS Code session; it is harmless except requring restarting VS Code from time to time.
 
 Find the "Trey Genie 2" in Copilot and test with the prompt below:
 
-* +++What is the status of the Woodgrove project?+++ (The project phases should come from the statement of work in SharePoint)
+* *What is the status of the Woodgrove project?* (The project phases should come from the statement of work in SharePoint)
 
-> [!Note] Since we have deployed a new declarative agent, you will need to give consent to use the API plugin even if you have previously given consent to the original agent.
+> NOTE: Since we have deployed a new declarative agent, you will need to give consent to use the API plugin even if you have previously given consent to the original agent.
 
 In addition to including information from the statement of work, Copilot should include the Trey motto, "always be billing."
