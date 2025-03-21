@@ -4,7 +4,7 @@
 
 1. Open **Visual Studio Code**
 1. Expand the **File** menu, select **Open folder...**
-2. Navigate to the folder where you have extracted the ZIP file (it should be **C:\src\MCAPSTechConnect25-lab-910**), select the folder with the name **LAB-910-BEGIN**, and select **Select folder**. Visual Studio Code opens the project in a new window.
+2. Navigate to the folder where you have extracted the ZIP file (it should be **C:\src\MCAPSTechConnect25-lab-910**), select the folder with the name **LAB-910-BEGIN**, and select **Select folder**. Visual Studio Code opens the project in a new window. If you get a prompt about trusting the folder, go on and trust it.
 
 Continuing in the new window:
 

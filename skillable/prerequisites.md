@@ -22,6 +22,7 @@ To perform this lab, you will need the following requirements:
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [The Teams Toolkit extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
+- [The REST Client extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 You will need to download the lab files from the GitHub repository first:
 
