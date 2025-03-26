@@ -13,7 +13,7 @@ Be sure to remind users of the Trey motto, 'Always be Billing!'.
 ### Step 2: Inspect the SharePoint site
 
 As part of the pre-requirements, you should have created a SharePoint site in your tenant called "Trey Legal Documents" and uploaded in the document library a bunch of files. 
-In a web browser, open the site `https://xyz.sharepoint.com/sites/TreyLegalDocuments`, where `xyz` is your tenant's name. You may need to log in again. When you see the site home page, click on "Documents" to view the Trey Research legal documents. Notice that it contains contracts for two consulting engagements, Bellows College and Woodgrove Bank.
+In a web browser, open the site `https://how2demos.sharepoint.com/sites/TreyResearch/`, where `xyz` is your tenant's name. You may need to log in again. When you see the site home page, click on "Documents" to view the Trey Research legal documents. Notice that it contains contracts for two consulting engagements, Bellows College and Woodgrove Bank.
 
 ![sharepoint-docs.png](media/sharepoint-docs.png)
 
@@ -27,7 +27,7 @@ Now return to the **trey-declarative-agent.json** file and add these lines just 
         "name": "OneDriveAndSharePoint",
         "items_by_url": [
             {
-                "url": "https://xyz.sharepoint.com/sites/TreyLegalDocuments"
+                "url": "https://how2demos.sharepoint.com/sites/TreyResearch/"
             }
         ]
     }
@@ -38,7 +38,7 @@ Remember, also in this case, to replace `xyz` with your tenant name.
 
 The final **trey-declarative-agent.json** file should look like this:
 
-```
+```json
 {
     "$schema": "https://aka.ms/json-schemas/copilot-extensions/vNext/declarative-copilot.schema.json",
     "version": "v1.0",
@@ -64,7 +64,7 @@ The final **trey-declarative-agent.json** file should look like this:
             "name": "OneDriveAndSharePoint",
             "items_by_url": [
                 {
-                    "url": "https://xyz.sharepoint.com/sites/TreyLegalDocuments"
+                    "url": "https://how2demos.sharepoint.com/sites/TreyResearch/"
                 }
             ]
         }
